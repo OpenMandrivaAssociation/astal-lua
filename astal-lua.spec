@@ -8,7 +8,7 @@
 
 Name:       astal-lua
 Version:    1~%{bumpver}.git%{astal_shortcommit}
-Release:    1
+Release:    2
 Source0:    https://github.com/aylur/astal/archive/%{astal_commit}/%{name}-%{astal_shortcommit}.tar.gz
 Summary:    Lua bindings for libastal
 URL:        https://github.com/aylur/astal
@@ -30,6 +30,7 @@ Requires:       lua-lgi
 Summary:    %summary
 Group:      System/Libraries
 Provides:   %{libname} = %{EVRD}
+Provides:   %{name}
 
 %description -n %{libname}
 
